@@ -2,11 +2,40 @@
 <html>
 <head>
     <title>About</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
+<script src='bootstrap-4.0.0-alpha.6-dist/js/bootstrap.js'>
+</script>
+<script> 
+$(document).ready(function(){
+  		$(window).resize(function(){
+			    var footerHeight = $('.footer').outerHeight();
+			    var stickFooterPush = $('.push').height(footerHeight);
+		
+    			$('.wrapper').css({'marginBottom':'-' + footerHeight + 'px'});
+		    });
+		
+    		$(window).resize();
+	    })
+</script>
+<link href='bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="About.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
 </head>
 
 <body>
-
+<div class= "wrapper">
+<header class="header">
+		    <h1>Some logo</h1>
+		   <ul class="nav">
+			    <li><a href="Index.html">Home</a></li>
+			    <li><a href="Stories.html">Stories</a></li>
+			    <li><a href="Contribute.html">Contribute</a></li>
+			    <li><a href="Information.html">Information and support</a></li>
+		   </ul>
+	  </header>
 <h1> About Us</h1>
 
 <div id= "container">
@@ -43,10 +72,17 @@ Name:<br>
 E-mail:<br>
 <input type="E-mail" name="email"><br>
 Comment:<br>
-<input type="text" name="comment" size="50"><br><br>
+<input type="text" name="comment" size="40"><br><br>
 <input type="submit" value="Send">
 <input type="reset" value="Reset">
 </form>
 </div>
+<footer class="footer">
+    <p>@2017 Soul Relics</p>
+    <p>soulrelicsmuseum@outlook.com</p>
+    
+</footer>
+
+</div> <!-- /wrapper  -->
 </body>
 </html> 
