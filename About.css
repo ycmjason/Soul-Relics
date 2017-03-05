@@ -45,3 +45,12 @@ h1 {color: darkblue
   margin: auto;
   padding: auto;
 }
+.form {
+    margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  text-align: left
+}
+h2 {color: darkblue}
