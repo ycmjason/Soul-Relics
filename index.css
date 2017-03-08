@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 h1 {color: darkblue
 } 
-
 .container{
   position: relative;
   display: inline-block;
@@ -64,7 +62,7 @@ html, body {
 .nav li {
 	display: inline-block;
 }
-=======
+
 .carouselslide {
   height: 200px;
   overflow: hidden;
@@ -76,5 +74,3 @@ html, body {
   height: auto;
 }
 
-
->>>>>>> origin/master
