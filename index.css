@@ -7,28 +7,10 @@ h1 {color: darkblue
 
 h2 {color: darkblue}
 
-html, body {
-	height: 100%;
-}
-
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-}
-
 .header, .header a,.footer {
 	background: darkblue;
 	color: #fff;
 	font-family: 'Shadows Into Light'
-}
-
-.nav {
-	list-style: none;
-}
-
-.nav li {
-	display: inline-block;
 }
 
 .carouselslide {
