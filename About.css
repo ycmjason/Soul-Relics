@@ -1,0 +1,83 @@
+h1 {color: darkblue
+} 
+
+.container{
+  position: relative;
+  display: inline-block;
+}
+
+.intro span { 
+   color: white; 
+   font: bold 20px/40px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+   position: absolute;
+  height: 10%;
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  top: 0;
+  bottom:0;
+    right: 0;
+  left: 0;    
+}
+
+.text {
+  position: absolute;
+  height: 10%;
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  top: 0.1;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-size: 20px;
+  color: white 
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: 80%;
+  margin: auto;
+  padding: auto;
+}
+.form {
+    margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  }
+
+h2 {color: darkblue}
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+.header, .header a,.footer {
+	background: darkblue;
+	color: #fff;
+	font-family: 'Shadows Into Light'
+}
+
+.nav {
+	list-style: none;
+}
+
+.nav li {
+	display: inline-block;
+}
+
+
+
