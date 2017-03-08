@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1 {color: darkblue
 } 
 
@@ -63,3 +64,17 @@ html, body {
 .nav li {
 	display: inline-block;
 }
+=======
+.carouselslide {
+  height: 200px;
+  overflow: hidden;
+}
+
+.d-blockimg-fluid
+{
+  width: auto;
+  height: auto;
+}
+
+
+>>>>>>> origin/master
