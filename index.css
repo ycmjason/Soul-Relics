@@ -5,7 +5,8 @@ h1 {color: darkblue
   display: inline-block;
 }
 
-h2 {color: darkblue}
+h2 {color: darkblue;
+font-size: 20px}
 
 .header, .header a,.footer {
 	background: darkblue;
@@ -14,6 +15,7 @@ h2 {color: darkblue}
 }
 
 .carouselslide {
+  width:100%;
   height: 200px;
   overflow: hidden;
 }
