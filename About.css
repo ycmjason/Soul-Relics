@@ -11,7 +11,7 @@ height:170vh;
 
 .title{
 	position:absolute;
-	top:20%;
+	top:25%;
 	left:50%;
 	text-align:center;
 	color: white;
@@ -24,20 +24,21 @@ height:170vh;
 	left:30%;
 	color: white;
 	font: bold 20px/40px Helvetica, Sans-Serif; 
-   text-align: right  
+   text-align: right;
    margin:20px;
+   background-color:rgba(0,0,255,0.2);
 }
 
 .text {
   position: absolute;
-  top:70%;
+  top:75%;
   text-align: left;
   margin: auto;
  font-size: 20px;
   color: white;
   margin:20px;
   display:block;
- }
+  }
 
  .form {
     margin: 0 auto;
@@ -49,13 +50,11 @@ height:170vh;
   }
 
 h2 {color: darkblue}
+br { line-height: 2em}
 
 html, body {
 	height: 100%;
 }
-
-
-
 .nav,.footer {
 	background: darkblue;
 	color: #fff;
@@ -67,7 +66,8 @@ html, body {
 }
 
 .nav li {
-	display: inline-block;
+	display: inline;
+	padding: 15px;
 }
 
 

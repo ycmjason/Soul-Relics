@@ -12,6 +12,7 @@
 [class*="col-"] {
   float: left;
   padding-right: 20px;
+  max-height:300px;
 }
 .grid [class*="col-"] last-of-type {
   padding-right: 0;
@@ -43,6 +44,11 @@
   padding-right: 20px;
 }
 
+img{
+  height: 100%;
+  width:100%;
+}
+
 body {
   padding: 10px 50px 20px;
   background-color: white;
@@ -61,7 +67,7 @@ font-size: 18px
 
 .carouselslide {
   width:100%;
-  height: 200px;
+  height: 100%;
   overflow: hidden;
 }
 
