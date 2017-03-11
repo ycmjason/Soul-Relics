@@ -41,11 +41,11 @@ height:170vh;
   }
 
  .form {
-    margin: 0 auto;
+    margin: 20px;
   width: 400px;
   padding: 1em;
   bottom:0;
-  border: 1px solid #CCC;
+  border: 3px solid #CCC;
   border-radius: 1em;
   }
 
