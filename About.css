@@ -1,55 +1,49 @@
-h1 {color: darkblue
-} 
-
-.container{
-  position: relative;
-  display: inline-block;
+header {
+background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+	url("rainbowbackground.jpg");
+background-size:cover;
+height:170vh;
 }
 
-.intro span { 
-   color: white; 
-   font: bold 20px/40px Helvetica, Sans-Serif; 
-   letter-spacing: -1px;  
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
-   padding: 10px;
-   position: absolute;
-  height: 10%;
-  text-align: left;
-  width: 90%;
-  margin: auto;
-  top: 0;
-  bottom:0;
-    right: 0;
-  left: 0;  
-  float: right  
+.title{
+	position:absolute;
+	top:20%;
+	left:50%;
+	text-align:center;
+	color: white;
+	transform: translate(-50%, -50%);
+}
+ 
+.intro { 
+	position:absolute;
+	top:30%;
+	left:30%;
+	color: white;
+	font: bold 20px/40px Helvetica, Sans-Serif; 
+   text-align: right  
+   margin:20px;
 }
 
 .text {
   position: absolute;
-  height: 10%;
+  top:70%;
   text-align: left;
-  width: 90%;
   margin: auto;
-  top: 0.1;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  font-size: 20px;
-  color: white 
-}
+ font-size: 20px;
+  color: white;
+  margin:20px;
+  display:block;
+ }
 
-.image {
-  display: block;
-  max-width: 100%;
-  height: 80%;
-  margin: auto;
-  padding: auto;
-}
-.form {
+ .form {
     margin: 0 auto;
   width: 400px;
   padding: 1em;
+  bottom:0;
   border: 1px solid #CCC;
   border-radius: 1em;
   }
@@ -60,13 +54,9 @@ html, body {
 	height: 100%;
 }
 
-.wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-}
 
-.header, .header a,.footer {
+
+.nav,.footer {
 	background: darkblue;
 	color: #fff;
 	font-family: 'Shadows Into Light'
