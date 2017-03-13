@@ -1,4 +1,4 @@
-#waterfall { margin: 10px; }
+#waterfall { margin: 10px; list-style: none; }
 #waterfall li {
   left: 0;
   top: 0;
@@ -10,7 +10,7 @@
   transform: translateY(0);
   transition: all 0.3s, top 1s;
 }
- 
+
 #waterfall li > div {
   color: rgba(0,0,0,0.6);
   font-size: 32px;
@@ -28,6 +28,38 @@
   box-shadow: 0 10px 15px rgba(038, 191, 64, 0.1);
   transition: all 0.3s;
 }
+
+.story {
+  min-height: 400px;
+  text-align: center;
+  overflow: hidden;
+  width: 300px;
+}
+
+.story .story-image {
+  height: 200px;
+  width: auto;
+}
+
+.story .story-title {
+  font-size: 24px;
+  margin: 0px;
+  padding: 10px;
+}
+
+.story .story-author {
+  font-size: 18px;
+  margin: 0px;
+  padding: 10px;
+}
+
+.story .story-content {
+  font-size: 16px;
+  line-height: 1.5;
+  overflow: none;
+  padding: 5px;
+}
+
 .nav {
   list-style: none;
   background: darkblue;
