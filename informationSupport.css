@@ -1,4 +1,47 @@
-h1 {
-  color: darkblue
-} 
+body {
+    max-width: 0 auto;
+	background: #87CEFA
+}
 
+h1 {
+  color: darkblue;
+  font-family: 'Shadows Into Light'; 
+}
+
+h2 {
+	color: darkblue;
+	font-family: 'Shadows Into Light';
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: darkblue;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: 'Shadows Into Light';
+}
+
+li a:hover {
+   background-color: #00FFFF;
+}
+
+.General {
+	background-color: white;
+	width: cover;
+	border: none;
+	padding: 5px;
+	padding: 25px;
+}
