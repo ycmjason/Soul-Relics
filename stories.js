@@ -103,6 +103,10 @@ function createStory(story) {
 	storyContentEl.textContent = trimToEllipsis(story.story);
 
 	// Join the elements into a template for a story
+	storyContentEl.addEventListener('click', function(event) {
+		var magnifiedStory = createMagnifiedStory(story.title, story.image, story.name, story.story);
+		document.body.append(magnifiedStory);
+	});
 	storyEl.append(storyImageEl);
 	storyEl.append(storyTitleEl);
 	storyEl.append(storyAuthorEl);
@@ -115,6 +119,41 @@ function createStory(story) {
 var storyTemplates = stories.map(function(story) {
 	return createStory(story);
 });
+
+// Make magnified story template
+var createMagnifiedStory = function(title, image, author, story) {
+	var magnifiedStory = document.createElement('div');
+	magnifiedStory.className = 'magnified-story';
+
+	var magnifiedStoryImageEl = document.createElement('img');
+	magnifiedStoryImageEl.className = 'story-image';
+	magnifiedStoryImageEl.src = image || 'http://www.codeodor.com/images/Empty_set.png';
+
+	var magnifiedStoryTitleEl = document.createElement('h3');
+	magnifiedStoryTitleEl.textContent = title || 'Untitled';
+	magnifiedStoryTitleEl.className = 'story-title';
+
+	var magnifiedStoryAuthorEl = document.createElement('h4');
+	magnifiedStoryAuthorEl.textContent = author || 'Anonymous';
+	magnifiedStoryAuthorEl.className = 'story-author';
+
+	var magnifiedStoryContentEl = document.createElement('p');
+	magnifiedStoryContentEl.className = 'story-content';
+	magnifiedStoryContentEl.textContent = story;
+
+	var closeMagnifiedStory = document.createElement('button');
+	closeMagnifiedStory.textContent = 'Close';
+	closeMagnifiedStory.addEventListener('click', function() {
+		
+	})
+
+	magnifiedStory.append(magnifiedStoryImageEl);
+	magnifiedStory.append(magnifiedStoryTitleEl);
+	magnifiedStory.append(magnifiedStoryAuthorEl);
+	magnifiedStory.append(magnifiedStoryContentEl);
+
+	return magnifiedStory;
+}
 
 // Attach templates to the DOM
 var waterfall = document.querySelector('#waterfall');

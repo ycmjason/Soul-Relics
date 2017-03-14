@@ -35,29 +35,41 @@
   overflow: hidden;
   width: 300px;
 }
-
 .story .story-image {
   height: 200px;
   width: auto;
 }
-
 .story .story-title {
   font-size: 24px;
   margin: 0px;
   padding: 10px;
 }
-
 .story .story-author {
   font-size: 18px;
   margin: 0px;
   padding: 10px;
 }
-
 .story .story-content {
   font-size: 16px;
   line-height: 1.5;
   overflow: none;
   padding: 5px;
+}
+
+.magnified-story {
+  background: white;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 30px;
+  text-align: center;
+  overflow-y: scroll;
+}
+.magnified-story .story-image {
+  height: 300px;
+  width: auto;
 }
 
 .nav {
