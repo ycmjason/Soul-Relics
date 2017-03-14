@@ -1,6 +1,11 @@
 .intro{
   background: #ffffcc;
-  height:50vh;
+  height:30vh;
+  background: linear-gradient(rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+  url("rainbowbackground.jpg");
+  height:30vh;
 }
 
 .backgroundinfo { 
@@ -8,21 +13,19 @@
 	font: bold 20px/40px Helvetica, Sans-Serif; 
   text-align: right;
   background:rgba(127,127,102,0.5);
-  height:30vh;
+  height:70vh;
 }
 
 .text {
   text-align: left;
   margin: auto;
  font-size: 20px;
-  color: white;
+  color: #FFFFE5;
   display:block;
-  background: linear-gradient(rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.6)
-    ),
-  url("rainbowbackground.jpg");
-    height:100vh;
-    padding: 30px;
+  background: 
+  linear-gradient(#7f7f66,#bfbfb2);
+  height:100vh;
+  padding: 30px;
   }
 
 .tablebottom{
@@ -66,8 +69,9 @@ footer {
 	list-style: none;
   font-family: 'Shadows Into Light';
   font-size: 20px;
-  color: #eeeddf;
-  background:#ffffcc;
+  color: white;
+  background:
+  linear-gradient(#FFFFE5,#e5e5ce);
 }
 
 
