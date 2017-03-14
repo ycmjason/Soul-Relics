@@ -1,17 +1,17 @@
-#waterfall { margin: 10px; list-style: none; }
-#waterfall li {
+#waterfall.standard { margin: 10px; list-style: none; }
+#waterfall.standard li {
   left: 0;
   top: 0;
   opacity: 0;
   transform: translateY(100px);
 }
-#waterfall li.show {
+#waterfall.standard li.show {
   opacity: 1;
   transform: translateY(0);
   transition: all 0.3s, top 1s;
 }
 
-#waterfall li > div {
+#waterfall.standard li > div {
   color: rgba(0,0,0,0.6);
   font-size: 32px;
   border-radius: 3px;
@@ -22,7 +22,7 @@
   transition: all 0.5s;
 }
 
-#waterfall li > div:hover {
+#waterfall.standard li > div:hover {
   transform: translateY(-10px);
   border: 1px solid rgba(038, 191, 64, 1);
   box-shadow: 0 10px 15px rgba(038, 191, 64, 0.1);
@@ -56,20 +56,15 @@
   padding: 5px;
 }
 
-.magnified-story {
-  background: white;
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  padding: 30px;
-  text-align: center;
-  overflow-y: scroll;
+#waterfall.magnify {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-.magnified-story .story-image {
-  height: 300px;
-  width: auto;
+#waterfall.magnify li {
+  position: static;
+  width: 100%;
 }
 
 .nav {
