@@ -11,14 +11,30 @@ body {
  }
 
 h1 {color: darkblue;
- font-family: 'Shadows Into Light' cursive;
-  font-size: 24px;
- text-shadow: 4px 4px 4px #aaa;
+   font-size: 70px;
+  text-shadow: 4px 4px 4px #aaa;
+  font-family: proxima-nova,sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .13em;
+  position: absolute;
+  top:0;
+    color: #eeeddf;
 } 
 
-h2 {
-color: darkblue;
-font-size: 18px
+.lowerrow {
+  padding-top: 90px;
+  color: #606070;
+  font-size: 16px;
+  font-family: Verdana,cursive;
+  }
+
+h3 {
+color:#707060;
+font-size: 40px;
+font-family:'Amatic SC', cursive;
+font-weight:bold;
+font-style:italic;
 }
 
 ul.carousel-container {
@@ -33,6 +49,7 @@ ul.carousel-container {
   display:flex;
   align-items: center;
   justify-content:center;
+  padding-top: 70px;
 }
 
 .d-blockimg-fluid

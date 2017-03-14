@@ -1,69 +1,75 @@
-header {
-background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.6)
-    ),
-	url("rainbowbackground.jpg");
-background-size:cover;
-height:170vh;
+.intro{
+  background: #ffffcc;
+  height:50vh;
 }
 
-.title{
-	position:absolute;
-	top:25%;
-	left:50%;
-	text-align:center;
-	color: white;
-	transform: translate(-50%, -50%);
-}
- 
-.intro { 
-	position:absolute;
-	top:30%;
-	left:30%;
+.backgroundinfo { 
 	color: white;
 	font: bold 20px/40px Helvetica, Sans-Serif; 
-   text-align: right;
-   margin:20px;
-   background-color:rgba(0,0,255,0.2);
+  text-align: right;
+  background:rgba(127,127,102,0.5);
+  height:30vh;
 }
 
 .text {
-  position: absolute;
-  top:75%;
   text-align: left;
   margin: auto;
  font-size: 20px;
   color: white;
-  margin:20px;
   display:block;
+  background: linear-gradient(rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+  url("rainbowbackground.jpg");
+    height:100vh;
+    padding: 30px;
   }
 
- .form {
-    margin: 20px;
-  width: 400px;
+.tablebottom{
+  background:rgba(31,31,31,0.6);
+}
+
+ #form{
+  margin: 20px;
+  width: 500px;
   padding: 1em;
   bottom:0;
   border: 3px solid #CCC;
   border-radius: 1em;
+  text-align:right;
   }
 
-h2 {color: darkblue}
+h2{color: darkblue}
+h1{
+  font-size: 50px;
+  text-shadow: 2px 2px 2px #aaa;
+  font-family: proxima-nova,sans-serif;
+  text-transform: uppercase;
+  color: #eeeddf;
+  font-weight: 500;
+  text-align:center;
+  padding-top: 50px;
+  }
 br { line-height: 2em}
 
 html, body {
 	height: 100%;
 }
-.nav,.footer {
+
+footer {
 	background: darkblue;
 	color: #fff;
-	font-family: 'Shadows Into Light'
+	font-family: 'Shadows Into Light';
 }
 
 .nav {
 	list-style: none;
+  font-family: 'Shadows Into Light';
+  font-size: 20px;
+  color: #eeeddf;
+  background:#ffffcc;
 }
+
 
 .nav li {
 	display: inline;
