@@ -72,6 +72,10 @@ ul.carousel-container {
   align-items: flex-start; 
 }
 
+a, img{
+  width:100%;
+}
+
 .col{
   padding:30px;
 }

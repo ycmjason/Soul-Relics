@@ -107,10 +107,16 @@ function createStory(story) {
 		var magnifiedStory = createMagnifiedStory(story.title, story.image, story.name, story.story);
 		document.body.append(magnifiedStory);
 	});
+
+	var shareButton = document.createElement('i'); 
+	shareButton.className = 'material-icons';
+	shareButton.textContent = 'share';
+
 	storyEl.append(storyImageEl);
 	storyEl.append(storyTitleEl);
 	storyEl.append(storyAuthorEl);
 	storyEl.append(storyContentEl);
+	storyEl.append(shareButton);
 	storyContainer.append(storyEl);
 	return storyContainer;
 }
