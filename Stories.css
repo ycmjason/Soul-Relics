@@ -1,4 +1,17 @@
-#waterfall.standard { margin: 10px; list-style: none; }
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+.sans-type {
+  font-family: 'Work Sans', sans-serif;
+}
+.cursive-type {
+  font-family: 'Caveat', cursive;
+}
+
+/*#waterfall.standard { margin: 10px; list-style: none; }
 #waterfall.standard li {
   left: 0;
   top: 0;
@@ -27,6 +40,14 @@
   border: 1px solid rgba(038, 191, 64, 1);
   box-shadow: 0 10px 15px rgba(038, 191, 64, 0.1);
   transition: all 0.3s;
+}*/
+
+#waterfall {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 .story {
@@ -34,26 +55,38 @@
   text-align: center;
   overflow: hidden;
   width: 300px;
+  margin: 30px;
 }
 .story .story-image {
   height: 200px;
   width: auto;
 }
 .story .story-title {
-  font-size: 24px;
+  font-size: 32px;
   margin: 0px;
-  padding: 10px;
+  padding: 15px;
+  font-weight: 400;
 }
 .story .story-author {
   font-size: 18px;
   margin: 0px;
-  padding: 10px;
+  padding: 5px;
 }
 .story .story-content {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   overflow: none;
   padding: 5px;
+}
+
+.hider {
+  position: fixed;
+  right: 2vw;
+  top: 5vh;
+  font-size: 100px;
+  cursor: pointer;
+  z-index: 5;
+  display: 'none';
 }
 
 #waterfall.magnify {
@@ -63,21 +96,35 @@
   align-items: center;
 }
 #waterfall.magnify li {
-  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+}
+#waterfall.magnify .story {
+  width: 70%;
+  margin: 50px auto;
 }
 
 .nav {
   list-style: none;
-  font-family: 'Shadows Into Light';
   font-size: 20px;
-  color: white;
-  background:#FFFFE5;
-  height:20vh;
+  color: black;
+  /*background: #CD6600;*/
+  height: 60px;
   display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0.7;
 }
 
-
 .nav li {
-  display: inline;
   padding: 15px;
+}
+
+.nav li a {
+  color: black;
+  text-decoration: none;
+}
