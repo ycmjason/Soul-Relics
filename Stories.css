@@ -56,6 +56,7 @@
   overflow: hidden;
   width: 300px;
   margin: 30px;
+  cursor: pointer;
 }
 .story .story-image {
   height: 200px;
