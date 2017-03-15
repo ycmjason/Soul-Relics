@@ -1,56 +1,58 @@
 .intro{
-  background: #ffffcc;
-  height:30vh;
-  background: linear-gradient(rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.6)
-    ),
-  url("rainbowbackground.jpg");
-  height:30vh;
-}
-
-.backgroundinfo { 
-	color: white;
-	font: bold 20px/40px Helvetica, Sans-Serif; 
-  text-align: right;
-  background:rgba(127,127,102,0.5);
-  height:70vh;
+line-height: 40px;
+padding:30px;
+margin-left: auto;
+margin-right: auto;
+font-weight: 400;
+font-size: 30px;
+text-align: center;
 }
 
 .text {
   text-align: left;
   margin: auto;
  font-size: 20px;
-  color: #FFFFE5;
+  color: #4E342E;
   display:block;
-  background: 
-  linear-gradient(#7f7f66,#bfbfb2);
-  height:100vh;
+  background: #eeeddf;
+  height:110vh;
   padding: 30px;
+  font-family:Helvetica,sans-serif;
   }
-
-.tablebottom{
-  background:rgba(31,31,31,0.6);
-}
 
 #contact-form {
   margin: 20px;
   width: 500px;
   padding: 1em;
   bottom:0;
-  border: 3px solid #CCC;
-  border-radius: 1em;
+  border: 2px solid #CCC;
+  border-color: #4E342E;
+  border-radius: 2em;
   display:flex;
   flex-direction: column;
+  background: rgba(255,252,211,0.1);
   }
-#contact-form input,textarea {
+#contact-form input,textarea{
   width:100%;
-}
+ }
 #contact-form .submit-button{
   margin: 0 auto;
   width:100px;
 }
+label{
+  line-height: 20px;
+}
 
-h2{color: darkblue}
+td{
+  width: 50%;
+  text-align: left;
+}
+
+h2{
+font-family:Helvetica,sans-serif;
+color: #4E342E;
+padding-left: 30px;
+}
 h1{
   font-size: 50px;
   text-shadow: 2px 2px 2px #aaa;
@@ -60,26 +62,24 @@ h1{
   font-weight: 500;
   text-align:center;
   padding-top: 50px;
+  padding: 30px;
   }
-br { line-height: 2em}
+br {line-height: 2em}
 
 html, body {
 	height: 100%;
 }
 
 footer {
-	background: darkblue;
+	background: #4E342E;
 	color: #fff;
 	font-family: 'Shadows Into Light';
 }
 
-.nav {
+.nav{
 	list-style: none;
-  font-family: 'Shadows Into Light';
   font-size: 20px;
-  color: white;
-  background:
-  linear-gradient(#FFFFE5,#e5e5ce);
+  font-family:Helvetica,sans-serif;
 }
 
 
@@ -89,4 +89,9 @@ footer {
 }
 
 
-
+/*background: linear-gradient(rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    ),
+  url("rainbowbackground.jpg");
+font-family: Helvetica,sans-serif;
+ color: #eeeddf;*/
