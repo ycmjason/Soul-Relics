@@ -86,7 +86,7 @@
   font-size: 100px;
   cursor: pointer;
   z-index: 5;
-  display: 'none';
+  display: none;
 }
 
 #waterfall.magnify {
