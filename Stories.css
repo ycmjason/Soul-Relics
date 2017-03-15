@@ -81,8 +81,9 @@
 
 .hider {
   position: fixed;
-  right: 2vw;
-  top: 5vh;
+  right: 30px;
+  top: 100px;
+  font-style: normal;
   font-size: 40px;
   font-family: 'Work Sans', sans-serif;
   cursor: pointer;
