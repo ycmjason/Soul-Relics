@@ -81,47 +81,65 @@ var stories = [
 	}
 ];
 
+var hider = document.querySelector('.hider');
+hider.style.display = 'none';
+hider.addEventListener('click', function() {
+	arrangeStories(0);
+	waterfall.className = 'standard';
+	this.style.display = 'none';
+});
+
 function trimToEllipsis(text) {
 	// Trims text and adds ellipsis to prevent ugly overflowing text
-	var numCharacters = Math.floor((Math.random() * 100) + 100);
-	if(text.length > numCharacters)
+	var waterfall = document.querySelector('#waterfall');
+	var numCharacters = Math.floor(Math.random() * 100 + 100);
+	if(text.length > numCharacters && waterfall.className !== 'magnify')
 		return text.slice(0, numCharacters) + '...';
 	else
 		return text;
 }
 
+function makeElement(tag, props, style) {
+	var elem = document.createElement(tag);
+	for(var key in props) { elem[key] = props[key]; }
+	for(var key in style) { elem.style[key] = style[key]; }
+	return elem;
+}
+
 function createStory(story) {
 	// Maps a story object to a template
-	var storyContainer = document.createElement('li');
-	var storyEl = document.createElement('div');
-	storyEl.className = 'story';
-
-	var storyImageEl = document.createElement('img');
-	storyImageEl.className = 'story-image';
-	storyImageEl.src = story.image || 'http://www.codeodor.com/images/Empty_set.png';
-
-	var storyTitleEl = document.createElement('h3');
-	storyTitleEl.textContent = story.title || 'Untitled';
-	storyTitleEl.className = 'story-title';
-
-	var storyAuthorEl = document.createElement('h4');
-	storyAuthorEl.textContent = story.name || 'Anonymous';
-	storyAuthorEl.className = 'story-author';
-
-	var storyContentEl = document.createElement('p');
-	storyContentEl.className = 'story-content';
-	storyContentEl.textContent = trimToEllipsis(story.story);
+	var storyContainer = makeElement('li');
+	var storyEl = makeElement('div', {className: 'story'});
+	var storyImageEl = makeElement('img', {
+		className: 'story-image',
+		src: story.image || 'http://www.codeodor.com/images/Empty_set.png'
+	});
+	var storyTitleEl = makeElement('h3', {
+		className: 'story-title cursive-type',
+		textContent: story.title || 'Untitled'
+	});
+	var storyAuthorEl = makeElement('h4', {
+		className: 'story-author sans-type',
+		textContent: story.name || 'Anonymous'
+	});
+	var storyContentEl = makeElement('p', {
+		className: 'story-content sans-type',
+		textContent: trimToEllipsis(story.story)
+	});
 
 	// Join the elements into a template for a story
 	storyContentEl.addEventListener('click', function(event) {
+		$('html,body').scrollTop(0);
 		var waterfall = document.querySelector('#waterfall');
 		waterfall.className = 'magnify';
+		hider.style.display = 'block';
 		arrangeStories(story.id);
 	});
 
-	var shareButton = document.createElement('i'); 
-	shareButton.className = 'material-icons';
-	shareButton.textContent = 'share';
+	var shareButton = makeElement('i', {
+		className: 'material-icons',
+		textContent: 'share'
+	});
 
 	storyEl.append(storyImageEl);
 	storyEl.append(storyTitleEl);
@@ -158,3 +176,4 @@ var waterfall = document.querySelector('#waterfall');
 waterfall.className = 'standard';
 
 arrangeStories();
+
