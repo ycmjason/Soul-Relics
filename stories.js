@@ -128,7 +128,7 @@ function createStory(story) {
 	});
 
 	// Join the elements into a template for a story
-	storyContentEl.addEventListener('click', function(event) {
+	storyEl.addEventListener('click', function(event) {
 		$('html,body').scrollTop(0);
 		var waterfall = document.querySelector('#waterfall');
 		waterfall.className = 'magnify';
