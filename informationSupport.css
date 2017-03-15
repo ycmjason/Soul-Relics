@@ -4,12 +4,12 @@ body {
 }
 
 h1 {
-  color: darkblue;
+  color: #4E342E;
   font-family: 'Shadows Into Light'; 
 }
 
 h2 {
-	color: darkblue;
+	color: #4E342E;
 	font-family: 'Shadows Into Light';
 }
 
@@ -18,7 +18,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: darkblue;
+	background-color: #4E342E;
 }
 
 li {
