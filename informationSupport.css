@@ -4,12 +4,12 @@ body {
 }
 
 h1 {
-  color: #4E342E;
+  color: rgba(255,252,211,1);
   font-family: 'Shadows Into Light'; 
 }
 
 h2 {
-	color: #4E342E;
+	color: rgba(255,252,211,1);
 	font-family: 'Shadows Into Light';
 }
 
@@ -27,7 +27,7 @@ li {
 
 li a {
 	display: block;
-	color: white;
+	color: rgba(255,252,211,1);
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -39,7 +39,39 @@ li a:hover {
 }
 
 .General {
-	background-color: white;
+	background-color: rgba(255,252,211,1);
+	width: cover;
+	border: none;
+	padding: 5px;
+	padding: 25px;
+}
+
+.Depression {
+	background-color: rgba(255,252,211,1);
+	width: cover;
+	border: none;
+	padding: 5px;
+	padding: 25px;
+}
+
+.Anxiety {
+	background-color: rgba(255,252,211,1);
+	width: cover;
+	border: none;
+	padding: 5px;
+	padding: 25px;
+}
+
+.OCD {
+	background-color: rgba(255,252,211,1);
+	width: cover;
+	border: none;
+	padding: 5px;
+	padding: 25px;
+}
+
+.BDD {
+	background-color: rgba(255,252,211,1);
 	width: cover;
 	border: none;
 	padding: 5px;
