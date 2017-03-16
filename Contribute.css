@@ -1,5 +1,5 @@
 body {
-	background: url("backgroundgoogle.jpg"); 
+	background-color:#4E342E;
 }
 
 h1 {
@@ -12,7 +12,7 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-	background-color: darkblue;
+	background-color:#4E342E;
 }
 
 li {
